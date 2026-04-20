@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 97%; /* #F4F7F9 */
+    --foreground: 0 0% 10%;    /* #1A1A1A */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 210 100% 20%;   /* #003366 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 212 80% 41%; /* #1565C0 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 33% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 212 80% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 51%; /* #D32F2F */
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 31 100% 48%;   /* #F57C00 */
+    --success: 123 43% 39%;   /* #388E3C */
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 212 80% 41%;
+
+    --radius: 0.75rem; /* 12px */
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom Utilities for EHS-Shield */
+.card-hover {
+  @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+}
