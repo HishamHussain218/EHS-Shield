@@ -36,6 +36,13 @@
     --ring: 212 80% 41%;
 
     --radius: 0.75rem; /* 12px */
+
+    /* Chart Colors */
+    --chart-1: #003366;
+    --chart-2: #1565C0;
+    --chart-3: #388E3C;
+    --chart-4: #F57C00;
+    --chart-5: #D32F2F;
   }
 }
 
